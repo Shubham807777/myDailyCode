@@ -392,3 +392,15 @@ myaccount.blanceChaeck();
 // Interview mein yeh bolo:
 
 // "Closure is a function that remembers the variables from its outer scope even after the outer function has finished executing."
+
+// Optional Chaining (?.)
+const user = {
+  name: "shubham",
+  Age: 26,
+  Address: {
+    city: "gurgaon",
+    pincode: 122001,
+  },
+};
+
+console.log(user.name);
