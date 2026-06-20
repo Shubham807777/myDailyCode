@@ -373,3 +373,22 @@ const myaccount = bankAccount();
 myaccount.deposite(200);
 myaccount.withdraw(10);
 myaccount.blanceChaeck();
+// Closure — Final Definition:
+
+// "Jab ek inner function apne outer function ke variables ko yaad rakhta hai — outer function khatam hone ke baad bhi — isse Closure kehte hain."
+
+// 3 cheezein hoti hain closure mein:
+
+// Outer function — variable banata hai
+// Inner function — us variable ko use karta hai
+// Return — inner function bahar aata hai, variable yaad rehta hai
+
+// Bank example se:
+// bankAccount()     ← outer function (khatam ho gaya)
+//    balance = 1000 ← variable (yaad hai abhi bhi)
+//    deposit()      ← inner function (balance yaad hai)
+//    withdraw()     ← inner function (balance yaad hai)
+
+// Interview mein yeh bolo:
+
+// "Closure is a function that remembers the variables from its outer scope even after the outer function has finished executing."
