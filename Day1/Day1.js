@@ -962,3 +962,13 @@ let random = Math.floor(Math.random() * 10) + 1;
 //Closure ka matlab hai: Inner function outer function ke variables ko yaad rakhta hai,
 //  aur agar multiple inner functions same outer scope me bane hain,
 // to wo sab usi same variable ko share karte hain.
+
+// SPREAD — values nikal raha hai (expand)
+let arr1 = [1, 2, 3];
+let arr2 = [...arr1, 4, 5]; // [1,2,3,4,5]
+
+// REST — values collect kar raha hai
+function sum(...numbers) {
+  console.log(numbers); // [1,2,3,4,5] — sab collect ho gaye
+}
+sum(1, 2, 3, 4, 5);
