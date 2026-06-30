@@ -95,7 +95,7 @@
 // console.log(fruits[fruits.length - 1]); // aakhri
 
 // Problem 5 — Array methods
-let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // 1. Sirf even numbers nikalo — filter use karo
 // 2. Har number ko double karo — map use karo
 // 3. Sab ka sum nikalo — reduce use karo
@@ -108,7 +108,7 @@ let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // console.log(numbers.reduce(total, (num) => total + num, 0));
 
-let sum = numbers.reduce((total, num) => total + num, 0);
+// let sum = numbers.reduce((total, num) => total + num, 0);
 // console.log(sum);
 
 // Apna ek user object banao
@@ -138,7 +138,7 @@ let sum = numbers.reduce((total, num) => total + num, 0);
 // console.log(Math.round(3.7));
 
 // 3. Random 1 to 10
-let random = Math.floor(Math.random() * 10) + 1;
+// let random = Math.floor(Math.random() * 10) + 1;
 // console.log(random);
 
 // Apna ek user object banao
@@ -964,11 +964,21 @@ let random = Math.floor(Math.random() * 10) + 1;
 // to wo sab usi same variable ko share karte hain.
 
 // SPREAD — values nikal raha hai (expand)
-let arr1 = [1, 2, 3];
-let arr2 = [...arr1, 4, 5]; // [1,2,3,4,5]
+// let arr1 = [1, 2, 3];
+// let arr2 = [...arr1, 4, 5]; // [1,2,3,4,5]
 
-// REST — values collect kar raha hai
-function sum(...numbers) {
-  console.log(numbers); // [1,2,3,4,5] — sab collect ho gaye
-}
-sum(1, 2, 3, 4, 5);
+// // REST — values collect kar raha hai
+// function sum(...numbers) {
+//   console.log(numbers); // [1,2,3,4,5] — sab collect ho gaye
+// }
+// sum(1, 2, 3, 4, 5);
+
+let nums = [1, 2, 3];
+
+// forEach — kuch return nahi hota
+let result1 = nums.forEach((n) => n * 2);
+console.log(result1); // undefined ❌
+
+// map — naya array milta hai
+let result2 = nums.map((n) => n * 2);
+console.log(result2); // [2, 4, 6] ✅
